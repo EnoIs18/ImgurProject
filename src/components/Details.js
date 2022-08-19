@@ -48,7 +48,7 @@ const Details = () => {
         ) : null}
 
          {/* shows the image or video*/} 
-     { imgDetails.images.data && imgDetails.images.data.title && <h1> {imgDetails.images.data.title}</h1>}
+     { imgDetails.images.data && imgDetails.images.data.title && <p className={styles.detailImageTitle}> {imgDetails.images.data.title}</p>}
         {imgDetails.images.data &&
           imgDetails.images.data.images &&
           imgDetails.images.data.images.map((el) => {

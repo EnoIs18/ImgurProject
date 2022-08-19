@@ -99,14 +99,16 @@
 .imgStats{
   color: white;
   position: fixed;
-  left: 19%;
+  left: 10%;
   top: 38%;
 }
 
 .imgStats span{
   cursor: pointer;
 }
-
+.detailImageTitle{
+  font-size: larger
+}
 /* mansory css  */
 
 .mansoryGrid {
@@ -124,3 +126,13 @@
   /* Style your items */
   .mansoryColumn > div { /* change div to reference your elements you put in <Masonry> */
     margin-bottom: 30px;}
+
+    @media only screen and (max-width: 767px) {
+      .detailsInfo:hover {
+        transform: none;
+    }
+    .detailImageTitle{
+      font-size: small
+    }
+
+    }
