@@ -138,8 +138,7 @@ const handleDisplayFilterChange = ()=>{
           Show viral
         </label>
       )}
- {/* selet component to change sections in the filter*/} c
-      <Select
+ {/* selet component to change sections in the filter*/}       <Select
         options={optionsForSections}
         theme={customTheme}
         className="section"

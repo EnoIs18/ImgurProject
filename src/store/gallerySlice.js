@@ -10,7 +10,7 @@ const initialState = {
 export const fetchImages = createAsyncThunk(
   "images/fetchImages",
   async (section) => {
-    const url = `https://api.imgur.com/3/gallery/${section.section}/${section.sortFilter}/${section.window}/5?showViral=${section.showViral}&mature=false&album_previews=true`;
+    const url = `https://api.imgur.com/3/gallery/${section.section}/${section.sortFilter}/${section.window}/?showViral=${section.showViral}&mature=false&album_previews=true`;
     const config = {
       headers: {
         Authorization: "Bearer 897ba61182d65604b92d667a3c8cf1856fbc5906 ",
