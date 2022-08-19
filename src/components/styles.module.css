@@ -1,0 +1,126 @@
+.gallery{
+
+  text-align: center;
+  padding: 5% 15% 15% 15%;
+}
+
+.galleryFilterNone{
+  display: none;
+
+
+}
+
+.galleryFilterGrid{
+  display: block;
+  -webkit-animation: scale-up-ver-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-ver-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+
+ @-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+.gallerySpan {
+  cursor: pointer;
+  margin-top: -10%;
+  color: white;
+}
+.detailsInfo {
+    background-color: #2e3035;
+    border: 1px solid #2e3035;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+    transition: all ease-in-out 0.2s;
+    border-radius: 0.5rem;
+  color: white;
+
+}
+
+.detailsInfo >p {
+    width: 100%;
+    font-weight: bold;
+    font-size: x-small;
+    overflow: hidden;
+}
+.detailsInfo:hover {
+    transform: scale(1.3);
+}
+
+.fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.galleryImageDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+.galleryImageDetails p {
+  width: 100%;
+  overflow: hidden;
+}
+.galleryImageDetails img, .galleryImageDetails video{
+  width: 80%;
+}
+.imgInfo {
+  width: 50%;
+  text-align: center;
+}
+.imgStats{
+  color: white;
+  position: fixed;
+  left: 19%;
+  top: 38%;
+}
+
+.imgStats span{
+  cursor: pointer;
+}
+
+/* mansory css  */
+
+.mansoryGrid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    gap: 1rem;
+  }
+  .mansoryColumn {
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .mansoryColumn > div { /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 30px;}
