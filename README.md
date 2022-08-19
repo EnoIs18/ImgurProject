@@ -22,10 +22,10 @@ Click on the link to see the application
 ## General Information
 -  Web app that allows browsing the Imgur gallery
 -  Different options are shown in order to filter gallery images
--  If an image or video is clicked its details will be shown
+-  If an image or video is clicked its details will be shown.
 
 ## ## Cloning and Running the Application in local
-Clone the project into local
+Clone the project into local,
 
 Install all the npm packages. Go into the project folder and type the following command to install all npm packages
 
